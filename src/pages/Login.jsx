@@ -3,12 +3,13 @@ import React, { useState } from "react";
 import styles from "../styles/login.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setMail] = useState("");
   const [password, setPassword] = useState("");
   const [loader, setLoader] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,8 +18,8 @@ const Login = () => {
       setTimeout(() => {
         setLoader(false);
         let token = tokenGenreator();
-        localStorage.setItem('myjobtoken', JSON.stringify(token))
-        toast.success("Login Success !");
+        localStorage.setItem("myjobtoken", JSON.stringify(token));
+        navigate("/");
       }, 1000);
     } else {
       setTimeout(() => {
@@ -28,9 +29,9 @@ const Login = () => {
     }
   };
 
-  const tokenGenreator = () =>  {
-    return Math.random().toString(36).substring(2); 
-};
+  const tokenGenreator = () => {
+    return Math.random().toString(36).substring(2);
+  };
 
   return (
     <Box>

@@ -3,4 +3,50 @@
   left: 0px;
   width: 100%;
   min-height: 90vh;
+  border: 1px solid red;
+}
+
+.searchBox {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 80px;
+  background: url("https://images.ctfassets.net/isq5xwjfoz2m/7IVZDfpTi8YyZNQyh6wKoC/eeb71a9863665755f5aae08588a194fd/MP_-_Economist.png?w=1016&h=424&q=80&fm=png")
+    center center/cover no-repeat;
+}
+
+.bar {
+  width: 70%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0px 8px 0px 8px;
+  gap: 10px;
+}
+
+.bar > input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+
+.bar > div {
+  background-color: #f652a0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.bar > div:hover{
+  background-color: aliceblue;
+  
 }

@@ -16,7 +16,9 @@ export default function Navbar() {
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"}>
-            <Box className={styles.logo}>MYJOBS</Box>
+            <Box className={styles.logo} onClick={() => navigate("/")}>
+              MYJOBS
+            </Box>
           </HStack>
 
           <Box>
@@ -24,7 +26,7 @@ export default function Navbar() {
               height={"40px"}
               fontSize={{ base: "12px", md: "14px" }}
               fontWeight={200}
-              background={"#6E40FF"}
+              background={"#F652A0"}
               color={"white"}
               onClick={() => {
                 if (token) {
