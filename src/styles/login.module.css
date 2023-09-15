@@ -1,0 +1,51 @@
+.container{
+    width: 100%;
+    height: 90vh;
+    background-color: #F9F8FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginCard{
+    width: 35%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 40px;
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size:16px;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.inputs input{
+  padding: 8px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid rgb(213, 213, 213);
+  font-size: 14px;
+}
+
+.submitBtn{
+    width: 100%;
+    border-radius: 2px;
+    color: white;
+    font-weight: 600;
+    background-color: #6E40FF;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.loginCard a{
+    color: #6E40FF;
+}
