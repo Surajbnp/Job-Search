@@ -1,0 +1,21 @@
+.active {
+  color: #518bfa;
+}
+
+.logo{
+  font-size: 25px;
+  font-weight: bold;
+  font-style:inherit;
+}
+
+.links > a:nth-child(3) {
+  color: rgb(170, 169, 169);
+  text-decoration: none;
+  cursor: no-drop;
+}
+
+.links > a:nth-child(4) {
+  color: rgb(168, 168, 168);
+  text-decoration: none;
+  cursor: not-allowed;
+}
