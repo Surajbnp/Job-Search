@@ -5,6 +5,7 @@ import Signup from "./Signup";
 import { Routes, Route } from "react-router-dom";
 import Auth from "../middlewares/Auth";
 import ApplyPage from "./ApplyPage";
+import SuccessPage from "./SuccessPage";
 
 const AllRoutes = () => {
   return (
@@ -24,6 +25,14 @@ const AllRoutes = () => {
         element={
           <Auth>
             <ApplyPage />
+          </Auth>
+        }
+      />
+        <Route
+        path={"/apply/success"}
+        element={
+          <Auth>
+            <SuccessPage />
           </Auth>
         }
       />

@@ -1,0 +1,75 @@
+.successContainer{
+    width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.successPage{
+    margin: 3rem auto;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    border-radius: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.gifCont{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.successTxt{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.points{
+    width: fit-content;
+    padding: 20px;
+    text-align: start;
+}
+
+.mailTxt{
+    font-weight: 600;
+}
+
+.returnBtn{
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.returnBtn > button{
+    padding: 7px;
+    width: 100%;
+    font-weight: 600;
+    color: #F652A0;
+    border-radius: 5px;
+    border: 1px solid #F652A0;
+    transition: 0.5s;
+}
+
+.returnBtn > button:hover{
+    background-color: #f9c9e0;
+    border: none;
+}
+
+@media only screen and (max-width: 768px){
+    .successTxt{
+        font-size: 20px;
+    }
+
+    .points{
+        font-size: 12px;
+    }
+
+    .returnBtn > button{
+        font-size: 12px;
+    }
+}

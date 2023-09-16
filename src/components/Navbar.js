@@ -10,7 +10,7 @@ export default function Navbar() {
     <>
       <Box
         width={"100%"}
-        fontFamily={"Rubik, 'sans-serif'"}
+        fontFamily={"Roboto, 'sans-serif'"}
         bg={useColorModeValue("gray.100", "gray.900")}
         px={4}
       >

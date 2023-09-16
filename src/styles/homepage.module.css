@@ -17,6 +17,11 @@
     center center/cover no-repeat;
 }
 
+.loaders{
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .bar {
   width: 80%;
   background-color: white;

@@ -41,11 +41,37 @@
     border-radius: 2px;
     color: white;
     font-weight: 600;
-    background-color: #6E40FF;
+    background-color: #F652A0;
     padding: 8px;
     margin-top: 20px;
 }
 
 .loginCard a{
-    color: #6E40FF;
+    color: #F652A0;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .loginCard{
+        width: 80%;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .loginCard{
+        width: 90%;
+    }
+
+    .heading{
+        font-size: 20px;
+    }
+
+    .inputs{
+        font-size: 14px;
+    }
+
+    .submitBtn{
+        padding: 7px;
+    }
 }

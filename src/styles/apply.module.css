@@ -1,0 +1,252 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}
+
+.design {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 80px;
+  background: url("https://images.ctfassets.net/isq5xwjfoz2m/7IVZDfpTi8YyZNQyh6wKoC/eeb71a9863665755f5aae08588a194fd/MP_-_Economist.png?w=1016&h=424&q=80&fm=png")
+    center center/cover no-repeat;
+  position: relative;
+}
+
+.companyName {
+  width: 80%;
+  height: 20vh;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 5px;
+  position: absolute;
+  top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: absolute;
+  top: -30px;
+  left: 50px;
+  width: 60px;
+  height: 60px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainDetails {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+.mainDetails > div {
+  width: 100%;
+  height: fit-content;
+  padding-left: 50px;
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.locationtxt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.locationtxt > p {
+  font-size: 20px;
+  color: #8e8a98;
+}
+
+.mainDetails > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.siteBtn {
+  color: white;
+}
+
+.summaryDiv {
+  width: 80%;
+  height: 50vh;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 2rem;
+  text-align: start;
+  margin: auto;
+}
+
+.summarydate {
+  font-size: 20px;
+  color: #f652a0;
+}
+
+.summaryTitle {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.heading {
+  margin-top: 3rem;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.summaryTxt {
+  font-size: 18px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  color: #8e8a98;
+}
+
+.applyDiv {
+  width: 80%;
+  height: 10vh;
+  margin: 3rem auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.summaryCont {
+  margin-top: 8rem;
+}
+
+.applyName {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Your tablet-specific CSS styles here */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainDetails {
+    height: 15vh;
+  }
+
+  .locationtxt {
+    display: none;
+  }
+
+  .summaryDiv {
+    height: fit-content;
+  }
+
+  .container {
+    padding-bottom: 2px;
+  }
+
+  .summaryCont {
+    margin-top: 4rem;
+  }
+
+  .companyName {
+    height: fit-content;
+  }
+}
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 768px) {
+  .companyName {
+    width: 90%;
+    top: 60px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .locationtxt {
+    display: none;
+  }
+
+  .locationtxt > p {
+    font-size: 14px;
+  }
+
+  .siteBtn {
+    width: 120px;
+    font-size: 8px;
+  }
+
+  .logo {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+  }
+
+  .summaryDiv {
+    width: 90%;
+    height: fit-content;
+  }
+
+  .summarydate {
+    font-size: 14px;
+  }
+
+  .summaryTitle {
+    font-size: 18px;
+  }
+
+  .heading {
+    font-size: 18px;
+    margin-top: 1rem;
+  }
+
+  .summaryCont {
+    margin-top: 5rem;
+  }
+
+  .summaryTxt {
+    font-size: 12px;
+  }
+
+  .applyName {
+    font-size: 14px;
+  }
+
+  .mainDetails > div {
+    width: fit-content;
+  }
+
+  .applyDiv {
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+
+  .container {
+    padding-bottom: 10px;
+  }
+}

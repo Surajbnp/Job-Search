@@ -11,7 +11,7 @@
   width: fit-content;
   padding: 10px;
   background-color: white;
-  border-radius: 10px;
+  border-radius:15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
 }
 
 .jobTitle {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
