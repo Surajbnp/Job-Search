@@ -6,7 +6,7 @@ import axios from "axios";
 const getJobs = (searchTerms) => (dispatch) => {
   dispatch({ type: types.GET_JOBDATA_REQUEST });
 
-  const rapidApiKey = "f7092003d3msh0e9264e4c0c0467p13719ajsn1874ea029e51";
+  const rapidApiKey = "27d452c4e1msha928ccb6a105196p11255bjsnc9cbc1aad890";
   const axiosConfig = {
     headers: {
       "content-type": "application/json",
