@@ -16,9 +16,9 @@ const HomePage = () => {
     dispatch(getJobs(serachTerm));
   };
 
-  // useEffect(() => {
-  //   dispatch(getJobs());
-  // }, []);
+  useEffect(() => {
+    dispatch(getJobs());
+  }, []);
 
   return (
     <Box className={styles.container}>
@@ -43,11 +43,13 @@ const HomePage = () => {
           <h1 className={styles.loaders}>{"Loading..."}</h1>
         ) : (
           <Box className={styles.cards}>
-            {jobs?.length === 0 && isLoading === false
-              ? <h1 className={styles.loaders}>{"No Jobs Found !"}</h1>
-              : jobs?.map((e, index) => {
-                  return <Card {...e} key={index} />;
-                })}
+            {jobs?.length === 0 && isLoading === false ? (
+              <h1 className={styles.loaders}>{"No Jobs Found !"}</h1>
+            ) : (
+              jobs?.map((e, index) => {
+                return <Card {...e} key={index} />;
+              })
+            )}
           </Box>
         )}
       </Box>
