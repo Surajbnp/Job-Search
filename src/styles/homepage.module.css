@@ -3,7 +3,7 @@
   left: 0px;
   width: 100%;
   min-height: 90vh;
-  border: 1px solid red;
+  background-color: #f4f6f8;
 }
 
 .searchBox {
@@ -18,7 +18,7 @@
 }
 
 .bar {
-  width: 70%;
+  width: 80%;
   background-color: white;
   display: flex;
   align-items: center;
@@ -36,17 +36,62 @@
   outline: none;
 }
 
+.bar > input[type="search"] {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .bar > div {
-  background-color: #f652a0;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
-.bar > div:hover{
+.bar > div:hover {
   background-color: aliceblue;
-  
+}
+
+.cards {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+}
+
+/* Your tablet-specific CSS styles here */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    height: fit-content;
+  }
+}
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 768px) {
+  .cards {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .bar > input {
+    padding: 12px;
+  }
+
+  .bar > input[type="search"] {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .bar > div {
+    width: 30px;
+    height: 30px;
+  }
 }

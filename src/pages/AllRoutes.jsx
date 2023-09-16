@@ -4,6 +4,7 @@ import Login from "./Login";
 import Signup from "./Signup";
 import { Routes, Route } from "react-router-dom";
 import Auth from "../middlewares/Auth";
+import ApplyPage from "./ApplyPage";
 
 const AllRoutes = () => {
   return (
@@ -15,6 +16,14 @@ const AllRoutes = () => {
         element={
           <Auth>
             <HomePage />
+          </Auth>
+        }
+      />
+      <Route
+        path={"/apply"}
+        element={
+          <Auth>
+            <ApplyPage />
           </Auth>
         }
       />

@@ -1,0 +1,120 @@
+.cardContainer {
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.officeIcon {
+  width: fit-content;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  position: absolute;
+  top: -20px;
+  left: 30px;
+}
+
+.info {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: start;
+  position: relative;
+}
+
+.dateTxt {
+  color: #f652a0;
+  font-weight: 600;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.jobTitle {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.companyName {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detailsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.locationTxt {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 500;
+  color: grey;
+}
+
+.viewBtn {
+  width: 150px;
+  padding: 8px;
+  background-color: #f652a0;
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.viewBtn:hover {
+  background-color: #f7b6d5;
+}
+
+
+/* Your tablet-specific CSS styles here */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .viewBtn{
+        width: 100px;
+    }
+  }
+
+
+/* For mobile phones: */
+
+@media only screen and (max-width: 768px) {
+  .jobTitle {
+    font-size: 20px;
+  }
+
+  .viewBtn {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .locationTxt {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .salaryTxt {
+    margin-top: 1px;
+    font-size: 12px;
+  }
+
+  .detailsDiv {
+    margin-top: 5px;
+  }
+}
